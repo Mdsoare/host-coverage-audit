@@ -85,5 +85,5 @@ python compare_hosts.py hosts_ad.txt agentes_edr.txt inventario_wsus.txt
 ## 📜 Licença
 Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
-
+---
 Desenvolvido por Marcelo Soares | Especialista em Segurança da Informação.
