@@ -1,0 +1,33 @@
+version: 2
+updates:
+  # 1. Dependências Python (PyPI / pip)
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "fix(deps)"
+      include: "scope"
+    # Agrupa todas as bibliotecas em um único PR semanal
+    groups:
+      python-dependencies:
+        patterns:
+          - "*"
+
+  # 2. GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "build(deps-dev)"
+      include: "scope"
+    # Ignora atualizações major automáticas para evitar tags/versões inexistentes
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+    # Agrupa as actions em um único PR
+    groups:
+      actions-dependencies:
+        patterns:
+          - "*"
