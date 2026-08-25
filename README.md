@@ -1,8 +1,18 @@
 # 🔍 HostList Comparator — Audit & Coverage Tool
 
-![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)
-![License MIT](https://img.shields.io/badge/license-MIT-green.svg)
-![Domain](https://img.shields.io/badge/domain-SecOps%20%26%20IT%20Audit-red.svg)
+<!-- Badges do Topo -->
+
+[![CI Pipeline](https://github.com/Mdsoare/host-coverage-audit/actions/workflows/security-scan.yml/badge.svg)](https://github.com/Mdsoare/host-coverage-audit/actions/workflows/security-scan.yml)
+[![Security Rating](https://img.shields.io/badge/Security-DevSecOps%20Hardened-green?style=flat&logo=github)](https://github.com/Mdsoare/host-coverage-audit/security/code-scanning)
+![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+
+<!-- Tech Stack & DevSecOps Ecosystem -->
+
+![Python Version](https://img.shields.io/badge/python-3.11%2B-blue.svg?style=for-the-badge&logo=python&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![Dependabot](https://img.shields.io/badge/Dependabot-025E8C?style=for-the-badge&logo=dependabot&logoColor=white)
+![SAST & SCA](https://img.shields.io/badge/DevSecOps-SAST%20%26%20SCA-red?style=for-the-badge&logo=github-actions&logoColor=white)
 
 Uma ferramenta em Python desenvolvida para **comparação automatizada de listas de ativos (hosts/IPs)** provenientes de múltiplos sistemas de inventário e ferramentas de segurança (ex: Active Directory, EDR/Antivírus, WSUS, Scanners de Vulnerabilidades).
 
