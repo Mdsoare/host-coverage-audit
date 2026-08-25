@@ -61,7 +61,7 @@ jobs:
 
       - name: Validar Formatação de Código (Black Check)
         run: |
-          black --check --diff devsecops_scanner.py
+          black --check --diff compare_hosts.py
 
   # -------------------------------------------------------------
   # JOB 3: Auditoria Nativa de Dependências (Pip-Audit)
@@ -306,7 +306,7 @@ jobs:
             python -m build
           else
             mkdir -p build_artifact
-            cp -r devsecops_scanner.py requirements.txt README.md build_artifact/
+            cp -r compare_hosts.py requirements.txt README.md build_artifact/
           fi
 
       - name: Subir Artefato de Build
